@@ -106,7 +106,7 @@ order by book.bookid asc
 | b003| 数据库系统全书 |加西亚-莫里纳|
 |b014| 数学分析原理 |卢丁|
 
-1. 给出借阅了所有图书类别的学生（stuid,stuname)
+8. 给出借阅了所有图书类别的学生（stuid,stuname)
 
 ```sql
 select student.stuid, student.stuname
@@ -130,7 +130,7 @@ having count(a.catid) = (
 |---|--|
 |200810111|王玲|
 
-1. 李飞同学弄丢了他在2010年10月9号（含当天）以后借的所有书，若已知计算机技术类图书原价3倍赔偿，其它类图书按原价2倍赔偿，给出他需要赔偿的钱数（赔偿数额）
+9. 李飞同学弄丢了他在2010年10月9号（含当天）以后借的所有书，若已知计算机技术类图书原价3倍赔偿，其它类图书按原价2倍赔偿，给出他需要赔偿的钱数（赔偿数额）
 
 ```sql
 select sum(case catname when'计算机技术' then 3\*price else 2\*price end)赔偿数额
@@ -146,7 +146,7 @@ join(
 |--|
 |251|
 
-1. 给出借阅“c1”类别图书次数最多的学生。（stuid，stuname，borrowcount）
+10. 给出借阅“c1”类别图书次数最多的学生。（stuid，stuname，borrowcount）
 
 ```sql
 select student.stuid, stuname, b.borrowcount
