@@ -2,7 +2,7 @@
 
 数据库为sql-server2017
 
-数据库sql文件见目录lib.sql
+数据库备份文件见根目录下Database Backup/lib.bak(.sql)
 
 数据库模式如下：
 
